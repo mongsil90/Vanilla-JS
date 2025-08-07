@@ -9,32 +9,38 @@
         <script src="js/quotes.js" defer></script>
         <script src="js/img.js" defer></script>
         <script src="js/todo.js" defer></script>
+        <script src="js/weather.js" defer></script>
         <title>momentum</title>
     </head>
     <body>
-        <h2 id="clock">00:00:00</h2>
-        <form id="login-form" class="hidden">
-            <input 
-                type="text" 
-                required
-                maxlength="15"
-                placeholder="Please write your name"
-                />
-            <button>
-                Log In
-            </button>
-        </form>
-        <h1 id="greeting" class="hidden"></h1>
-        <div id="quote">
-            <span></span>
-            <span></span>
-        </div>
-        <form id="todo-form">
-            <input 
-                type="text" 
-                placeholder="To Do List"
-                />
-        </form>
-        <ul id="todo-list"></ul>
+        <main>
+            <div id="weather">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="clock">
+                <h2 id="clock">00:00</h2>
+            </div>
+            <form id="login-form" class="hidden">
+                <input 
+                    type="text" 
+                    required
+                    maxlength="15"
+                    placeholder="Please write your name"
+                    />
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+            <div id="quote">
+                <span></span>
+                <span></span>
+            </div>
+            <form id="todo-form">
+                <input 
+                    type="text" 
+                    placeholder="Write a To Do"
+                    />
+            </form>
+            <ul id="todo-list"></ul>
+        </main>
     </body>
 </html>
